@@ -17,6 +17,30 @@ Name            | Type    | Mandatory | Default  | Description
 `issuer`        | string  | if the `openid` scope is requested.           |          | The ID of the token issuer. This enables metadata discovery which will override the configuration set up in this file.
 `base_url`      | string  |           |          | base url to be added to internal redirects. Set this to enable the client to be behind a proxy.
 
+## Assignments
+### Assignment 1
+Fill in the the missing data for the token request. Without the correct pararmeters, the application will not receive a token in exchnge for the code. When an access_token is rececied, the assignment is fullfilled.
+
+### Assignment 2
+Fill in the the missing data for the refresh request.
+When the assignment is done, you will receive a new refresh and access token.
+
+### Assignment 3
+Fill in the the missing data for the revoke request. 
+When the assignment is done, you wont get an error from the revoke request.
+
+### Assignment 4
+Call th api with a invalid token, i.e. revoked. Use the token to call an api, and when the response from the API is 401 Unauthorized; refresh the access token and try again. Expect a successful response.
+
+### Assignment 5
+Revoke the refresh_token token. Expect both the refresh toen and access token to be invalidated.
+
+
+### Assignment 6
+Get the the configuration of the client by deriving the address from the issuer name Update the endpoint configuration from the metadata object.
+
+### Assignment 7
+Call the jwks uri and cache the keys (in Application State)
 
 ## Questions and Support
 
