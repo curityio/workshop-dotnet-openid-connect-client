@@ -38,12 +38,16 @@ namespace exampledotnetopenidconnectclient.App_Start
             api_endpoint = ConfigurationManager.AppSettings["api_endpoint"];
             base_url = ConfigurationManager.AppSettings["base_url"];
 
-            // Exercise 1
-            // Get the discovery document and change the values of 
-            // authorization_endpoint, token_endpoint, revocation_endpoint, jwks_uri
-            // with the ones found
+			// Assignment 6
+			// Get the discovery document and change the values of 
+			// authorization_endpoint, token_endpoint, revocation_endpoint, jwks_uri
+			// with the ones found
 
-        }
+
+			// Assignment 7
+            // Call the jwks uri and cache the keys (in Application State)
+
+		}
 
         public String GetLogoutEndpoint()
         {
